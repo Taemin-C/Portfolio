@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">project3</string>
+
+    <string name="splash_title">
+        Mo\n
+        Star\n
+            Gram
+    </string>
+
+    <string name="motelA">
+        전 객실 배그사양 컴퓨터\n1층 프론트 토스트와 원두커피 제공\n오전 7시~9시 조식 제공
+    </string>
+
+    <string name="ninfo">
+        놀이공원 1.7km 자동차 4분거리\n시외버스정류장 1km 자동차 3분거리\n지하철역 300m 도보 1분거리
+    </string>
+
+    <string name="rule1">
+        객실요금은 2인 입실 기준이며, 파티룸 등\n특수객실의 경우, 직접 입실 인원 확인이 필요합니다.
+    </string>
+    <string name="rule2">
+        미성년자의 입실 가능여부는 직접 제휴점에 확인\n후 예약 진행하시기 바랍니다.
+    </string>
+
+    <string name="rule3">
+        미성년자 혼숙예약으로 인해 발생하는 입실 거부\n에대해서는 취소 및 환불이 불가합니다.
+    </string>
+    <string name="rule4">
+        제휴점 사정에 의한 취소 발생 시 전액 환불 처리됩니다.
+    </string>
+    <string name="rule5">
+        제휴점 사정으로 객실 정보가 수시로 변경될 수 있습니다.\n이로 인한 불이익은 당사가 책임지지 않습니다.
+    </string>
+    <string name="c1">
+        입실 1일전 24시 전까지 : 수수료 없음
+    </string>
+    <string name="c2">
+        당일 취소 및 미방문 : 환불불가
+    </string>
+
+    <string name="reserved">
+        2019/10/30(수) 18시~\n2019/10/31(목) 13시
+    </string>
+    <string name="reserved2">
+        2019/8/24(토) 18시~\n2019/8/25(일) 13시
+    </string>
+</resources>

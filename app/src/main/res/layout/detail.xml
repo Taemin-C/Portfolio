@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="5dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20dp"
+            android:text="선택 옵션 : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginRight="5dp"
+            android:text="스파"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginRight="5dp"
+            android:text="안마의자"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20dp"
+            android:layout_marginRight="5dp"
+            android:text="스타일러"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#807e7e"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/sample"
+        android:background="@drawable/editlinear"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/viewimg"
+            android:background="#000"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_toRightOf="@id/viewimg"
+            android:id="@+id/name"
+            android:text="대구 두류 A모텔"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/viewimg"
+            android:id="@+id/star"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:numStars="1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="4.5"
+            android:layout_marginHorizontal="3dp"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/star"
+            android:id="@+id/startxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="후기 : 000개"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@id/startxt"
+            android:id="@+id/review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/viewimg"
+            android:layout_below="@id/star"
+            android:id="@+id/rent"
+            android:text="대실"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="20000원~~"
+            android:layout_below="@id/startxt"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rentprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/viewimg"
+            android:layout_below="@id/rent"
+            android:id="@+id/oneday"
+            android:text="숙박"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="50000원~~"
+            android:layout_below="@id/rentprice"
+            android:layout_alignParentRight="true"
+            android:id="@+id/onedayprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:id="@+id/sample2"
+        android:background="@drawable/editlinear"
+        android:padding="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/viewimg2"
+            android:background="#000"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_toRightOf="@id/viewimg2"
+            android:id="@+id/name2"
+            android:text="서울 역삼동 A모텔"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:layout_below="@id/name2"
+            android:layout_toRightOf="@id/viewimg2"
+            android:id="@+id/star2"
+            android:rating="4.5"
+            android:stepSize="0.5"
+            android:numStars="1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="4.9"
+            android:layout_marginHorizontal="3dp"
+            android:layout_below="@id/name2"
+            android:layout_toRightOf="@id/star2"
+            android:id="@+id/startxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="후기 : 000개"
+            android:layout_below="@id/name2"
+            android:layout_toRightOf="@id/startxt2"
+            android:id="@+id/review2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/viewimg2"
+            android:layout_below="@id/star2"
+            android:id="@+id/rent2"
+            android:text="대실"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="40000원~~"
+            android:layout_below="@id/startxt2"
+            android:layout_alignParentRight="true"
+            android:id="@+id/rentprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/viewimg2"
+            android:layout_below="@id/rent2"
+            android:id="@+id/oneday2"
+            android:text="숙박"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:text="70000원~~"
+            android:layout_below="@id/rentprice2"
+            android:layout_alignParentRight="true"
+            android:id="@+id/onedayprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

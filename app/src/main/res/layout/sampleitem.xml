@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#c7c7c9"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_hotel_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="대구 두류 A모텔"
+            android:textColor="@color/txtblack"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="1"
+                android:rating="4.5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="4.5"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="후기 1개"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="주소"
+            android:textColor="@color/txtblack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/splashbg"
+                android:text="전화 문의"
+                android:textColor="@color/txtblack" />
+
+            <Button
+                android:id="@+id/Qbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/splashbg"
+                android:text="온라인 문의"
+                android:textColor="@color/txtblack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginVertical="3dp"
+            android:background="@drawable/editlinear"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:id="@+id/checkin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="체크인"
+                    android:textColor="@color/txtblack" />
+
+                <TextView
+                    android:id="@+id/intxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11월 4일(월)"
+                    android:textColor="#0b8dff"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_forward_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="체크 아웃"
+                    android:textColor="@color/txtblack" />
+
+                <TextView
+                    android:id="@+id/outtxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11월 5일(화)"
+                    android:textColor="#0b8dff"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/nomal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/editlinear"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/viewimg1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/nomalroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/viewimg1"
+                android:text="일반실"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomalroom"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/viewimg1"
+                android:text="대실"
+                android:textColor="@color/txtblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/rentprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomalroom"
+                android:layout_toLeftOf="@id/rentbase"
+                android:text="20000"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/rentbase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nomalroom"
+                android:layout_alignParentRight="true"
+                android:text="원"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/oneday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rent"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/viewimg1"
+                android:text="숙박"
+                android:textColor="@color/txtblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/onedayprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rentprice"
+                android:layout_toLeftOf="@id/onedaybase"
+                android:text="50000"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/onedaybase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rentprice"
+                android:layout_alignParentRight="true"
+                android:text="원"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/special"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:background="@drawable/editlinear"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/viewimg2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/specialroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/viewimg2"
+                android:text="특실"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specialroom"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/viewimg2"
+                android:text="대실"
+                android:textColor="@color/txtblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/rentprice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/specialroom"
+                android:layout_alignParentRight="true"
+                android:text="30000원"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/oneday2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rent2"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/viewimg2"
+                android:text="숙박"
+                android:textColor="@color/txtblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/onedayprice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rentprice2"
+                android:layout_alignParentRight="true"
+                android:text="65000원"
+                android:textColor="@color/txtblack"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="#b3b1b1"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:background="@drawable/editlinear"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="옵션"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="고사양PC 스파욕조 안마의자(특실) 스타일러(특실) 고데기"
+                android:textColor="@color/txtblack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="숙소 소개"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/motelA"
+                android:textColor="@color/txtblack"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="주변 정보"
+                android:textColor="@color/txtblack"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="@string/ninfo"
+                android:textColor="@color/txtblack"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:padding="5dp">
+
+                <fragment
+
+                    android:id="@+id/tmap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    map:cameraTargetLat="35.863"
+                    map:cameraTargetLng="128.555"
+                    map:cameraZoom="15"
+                    ></fragment>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
